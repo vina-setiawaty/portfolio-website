@@ -1,4 +1,7 @@
 import "./index.css";
+import Image from "next/image";
+import Link from "next/link";
+
 
 export const Navbar = () => {
     const listStyle = {
@@ -8,20 +11,20 @@ export const Navbar = () => {
     }
 
     return (
-        <nav className="flex items-center justify-between px-[48px] py-[24px] bg-primary text-accent font-main">
+        <nav className="flex items-center justify-between text-lg px-[48px] py-[24px] bg-primary text-accent font-main">
         <div className="text-lg font-bold">
-            <img src="/assets/icon.svg" alt="Logo" className="h-8 inline-block mr-2" />
+            <Image src="/assets/icon.svg" alt="Logo" width={48} height={48} className="h-8 w-8 inline-block" />
         </div>
         <ul className="flex space-x-[48px]" style={listStyle}>
             <li>
-            <a href="/" className="hover:underline">
+            <Link href="/" className="hover:underline">
                 Projects
-            </a>
+            </Link>
             </li>
             <li>
-            <a href="/about" className="hover:underline">
+            <Link href="/about" className="hover:underline">
                 About
-            </a>
+            </Link>
             </li>
         </ul>
         </nav>

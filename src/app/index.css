@@ -1,3 +1,28 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* @tailwind base; */
+/* @tailwind components; */
+/* @tailwind utilities; */
+
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('/assets/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900; /* Adjust range as needed */
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Sora';
+  src: url('/assets/fonts/Sora-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900; /* Adjust range as needed */
+  font-display: swap;
+}
+
+/* ...existing code... */
+
+@theme {
+    --color-primary: #EDEDED;
+    --color-accent: #3D3D3D;
+    --font-main: Space Grotesk, sans-serif;
+    --font-secondary: Sora, sans-serif;
+}

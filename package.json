@@ -5,11 +5,12 @@
   "homepage": "https://vina-setiawaty.github.io/portfolio-website/",
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "touch out/.nojekyll && gh-pages -d out -t true",
+    "deploy": "gh-pages -d out",
     "deploy-npm": "npm run build && npm run deploy"
+    
   },
   "dependencies": {
     "gh-pages": "^6.3.0",

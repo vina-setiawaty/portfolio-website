@@ -1,13 +1,14 @@
 // import Image from "next/image";
 import { Navbar } from "./navbar";
 import "./index.css";
+import { Footer } from "./footer";
 
 export default function Home() {
   return (
     <div className="font-secondary bg-primary text-accent flex flex-col min-h-screen items-start justify-start">
       <Navbar />
-      <div className="flex flex-col items-center justify-start min-h-screen max-w-[2160px] w-full my-[52px] md:my-[80px]">
-        <div className="flex flex-col items-center justify-start min-h-screen max-w-[2160px] w-full my-[48px] gap-4 md:gap-8">
+      <div className="flex flex-col items-center justify-start max-w-[2160px] w-full my-[52px] md:my-[80px]">
+        <div className="flex flex-col items-center justify-start max-w-[2160px] w-full my-[48px] gap-4 md:gap-8">
           <h1 className="text-jump text-6xl md:text-8xl text-center font-main font-bold text-accent mb-4">
             <span>H</span><span>e</span><span>l</span><span>l</span><span>o</span><span>,</span><br />
             <span>I</span><span>'</span><span>m</span><span>{'\u00A0'}</span><span>V</span><span>i</span><span>n</span><span>a</span>
@@ -18,6 +19,7 @@ export default function Home() {
           <hr className="h-[1px] w-[80%] px-[12px] md:px-[48px] xl:max-w-[1280px]" />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

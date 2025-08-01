@@ -2,8 +2,9 @@
 const isGithubPages = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
-    output: 'export', // required for static export
-    basePath: isGithubPages ? '/portfolio-website' : '',
-    assetPrefix: isGithubPages ? '/portfolio-website/' : '',
+  basePath: "/portfolio-website",
+  output: "export",
+  reactStrictMode: true,
 };
+
 export default nextConfig;

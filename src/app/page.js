@@ -29,8 +29,8 @@ export default function Home() {
           </h1>
           <div className="flex flex-row items-center justify-center w-full gap-[24px]">
             {FINAL_DATA.map((data, i) => (
-              <Link href={{ pathname: '/project', query: { msg: data.titleID } }}>
-                <ProjectCard image={data.thumbnailImg} title={data.title} tags={data.tags} hoverText={data.hoverText} />
+              <Link href={{ pathname: '/project', query: { msg: data.titleID } }} key={i}>
+                <ProjectCard selectedData={data} />
               </Link>
             ))}
           </div>

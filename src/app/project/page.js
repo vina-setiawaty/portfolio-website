@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Navbar } from "../components/navbar";
 import "../index.css";
 import { Footer } from "../components/footer";
+import { Hero } from "../components/hero";
 import { FINAL_DATA } from "../data";
 import { useSearchParams } from 'next/navigation';
 
@@ -15,13 +16,8 @@ export default function Home() {
   return (
     <div className="font-secondary bg-primary text-accent flex flex-col min-h-screen items-start justify-start">
       <Navbar />
-      <div className= {mainBodyStyle}>
-        <div className="flex flex-col items-center justify-start w-full my-[48px] gap-4 md:gap-8">
-          <Image src={selectedData.projectImg} width={16}  height={9} className="w-full aspect-video" />
-          <div id="project-heading">
-            
-          </div>
-        </div>
+      <div className={mainBodyStyle}>
+        <Hero selectedData={selectedData} />
         {/* <div id="projects" className="flex flex-col items-center justify-start w-full my-[24px]">
           <h1 className="text-3xl md:text-4xl font-main font-semibold text-accent mb-8">
             Design Projects

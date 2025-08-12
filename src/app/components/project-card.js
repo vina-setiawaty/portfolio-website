@@ -4,8 +4,9 @@ import React, { useState } from "react";
 import "../index.css";
 import Image from "next/image";
 import Link from "next/link";
+import Tags from "./tags";
 
-export default function ProjectCard({ image, title, tags = [], hoverText }) {
+export default function ProjectCard({ selectedData }) {
     const [flipped, setFlipped] = useState(false);
 
     return (
@@ -15,7 +16,7 @@ export default function ProjectCard({ image, title, tags = [], hoverText }) {
             onMouseLeave={() => setFlipped(false)}>
                 <div className="card-front">
                     <div className="image-container w-full h-full">
-                        <Image src={image} alt={title} width={320} height={320} />
+                        <Image src={selectedData.thumbnailImg} alt={selectedData.title} width={320} height={320} />
                     </div>
                 </div>
                 <div
@@ -23,18 +24,12 @@ export default function ProjectCard({ image, title, tags = [], hoverText }) {
                     style={{ opacity: flipped ? "100" : "0" }}
                 >
                     <div className="image-container w-full h-full flex items-center justify-center">
-                        <div className="hover-text text-center text-2xl p-[36px]">{hoverText}</div>
+                        <div className="hover-text text-center text-2xl p-[36px]">{selectedData.hoverText}</div>
                     </div>
                 </div>
             </div>
-            <div className="card-tags flex flex-wrap gap-[8px]">
-                {tags.map((tag, i) => (
-                    <span className="card-tag rounded-[4px] text-sm px-[12px] py-[4px] fit-content bg-white" key={i}>
-                        {tag}
-                    </span>
-                ))}
-            </div>
-            <h2 className="card-title text-3xl font-secondary font-semibold">{title}</h2>
+            <Tags tags={selectedData.tags} />
+            <h2 className="card-title text-3xl font-secondary font-semibold">{selectedData.title}</h2>
         </div>
     );
 }

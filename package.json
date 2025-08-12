@@ -5,7 +5,7 @@
   "homepage": "https://vina-setiawaty.github.io/portfolio-website/",
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "deploy": "gh-pages -d out",

@@ -5,9 +5,11 @@ import "../index.css";
 import { Footer } from "../components/footer";
 import { Hero } from "../components/hero";
 import { FINAL_DATA } from "../data";
-import { useSearchParams } from 'next/navigation';
+import { Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 
-export default function Home() {
+
+function Home() {
   const searchParams = useSearchParams();
   const message = searchParams.get('msg');
   const selectedData = FINAL_DATA.find(data => data.titleID === message);
@@ -33,5 +35,14 @@ export default function Home() {
       </div>
       <Footer />
     </div>
+  );
+}
+
+
+export default function ProjectPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <Home />
+    </Suspense>
   );
 }

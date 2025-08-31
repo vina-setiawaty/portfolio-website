@@ -29,7 +29,7 @@ export default function Home() {
           </h1>
           <div className="flex flex-row flex-wrap items-center justify-center w-full gap-[24px]">
             {WEB_DATA.map((data, i) => (
-              <Link href={{ pathname: '/project', query: { msg: data.titleID } }} key={i}>
+              <Link href={{ pathname: '/project', query: { msg: data.titleID, type: "web" } }} key={i}>
                 <ProjectCard selectedData={data} />
               </Link>
             ))}
@@ -41,7 +41,7 @@ export default function Home() {
           </h1>
           <div className="flex flex-row flex-wrap items-center justify-center w-full gap-[24px]">
             {FINAL_DATA.map((data, i) => (
-              <Link href={{ pathname: '/project', query: { msg: data.titleID } }} key={i}>
+              <Link href={{ pathname: '/project', query: { msg: data.titleID, type: "project" } }} key={i}>
                 <ProjectCard selectedData={data} />
               </Link>
             ))}

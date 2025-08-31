@@ -83,10 +83,16 @@ const FINAL_DATA = [
         "projectTitle": "TechTile",
         "projectDescription": "Exploring ceramic tiles as a medium for our daily interactions with technology",
         "video": "https://www.youtube.com/embed/zOE3IwYC-kY?si=W9Agstc2P0eZy_2k",
+        "videoTitle": "TechTile Demonstration",
+        "videoDesc": "We created a digital interface to control the patterns and light effect that is shown on a physical ceramic piece to demonstrate the potential of ceramics as an interactive medium while allowing people to design their own interaction with three different states, standby, hover, and touch.",
         "project-section": [
             {
                 "heading": "What is a ceramic piece to you?",
                 "pictures": [
+                    {
+                        "img_link": "./assets/projectImg/Ceramics/images.jpeg",
+                        "caption": "Ceramic Circuits. Photo courtesy of Interactive Materials Lab, NUS"
+                    },
                     {
                         "img_link": "./assets/projectImg/Ceramics/Ceramics.png",
                         "caption": "Exploring existing ceramic forms"
@@ -101,23 +107,23 @@ const FINAL_DATA = [
                 ]
             },
             {
-                "heading": "An interactive planter that brings animated shadows into your living room.",
+                "heading": "Sandblasting to achieve backlit quality of ceramic pieces",
                 "pictures": [
                     {
-                        "img_link": "/assets/projectImg/Planter/20240620_230215_1-ezgif.com-optimize.gif",
-                        "caption": "Dusk in a dark room"
+                        "img_link": "/assets/projectImg/Ceramics/_DSF3580.png",
+                        "caption": "Backlit ceramic piece"
                     },
                     {
-                        "img_link": "/assets/projectImg/Planter/LED.JPG",
-                        "caption": "LED inside the planter"
+                        "img_link": "/assets/projectImg/Ceramics/Backlit.png",
+                        "caption": "Patterns created by sandblasting, only visible when backlit"
                     },
                     {
-                        "img_link": "/assets/projectImg/Planter/ground.png",
-                        "caption": "A cable connected to the ground able to detect change in capacitance"
+                        "img_link": "/assets/projectImg/Ceramics/SevenSegment.png",
+                        "caption": "Potential as an interface, demonstrated using a seven-segment display"
                     }
                 ],
                 "paragraphs": [
-                    "We strive to bring these majestic shadows indoors. Hidden within our planter, we’ve placed an LED strip controlled by Arduino to create animated shadows. By capitalizing on the water content in plants, we can measure changes in capacitance when the plant is touched. Thus, we created Dusk—a planter that magnifies a plant's shadow and allows it to respond to your touch using its shadow."
+                    "As we continued to explore the process of sandblasting, we discovered that by varying the duration of sandblasting, we could achieve different levels of translucency in the ceramic material. This led us to experiment with backlighting ceramic pieces, which revealed intricate patterns and designs that were otherwise invisible.", "We saw potential in using these backlit ceramics as an interface. To demonstrate this, we created a seven-segment display using the sandblasting technique, showcasing how ceramic pieces could be both functional and aesthetically pleasing."
                 ]
             }
         ],
@@ -135,7 +141,7 @@ const WEB_DATA = [
         "thumbnailImg": "./assets/projectImg/Web/Logo.png",
         "projectImg": "./assets/projectImg/Web/Web_2024.png",
         "projectTitle": "DID Gradwebsite 2024",
-        "projectDescription": "<a href='https://cde.nus.edu.sg/did/gradshows/2024/?filter=designer' target='_blank' class='underline'>here</a>",
+        "projectDescription": "Graduation website for the Industrial Design students Class of 2024. Check out their works and the website <a href='https://cde.nus.edu.sg/did/gradshows/2024/?filter=designer' target='_blank' class='underline'>here</a>"
     },
     {
         "titleID": "Gradweb2025",
@@ -147,7 +153,7 @@ const WEB_DATA = [
         "thumbnailImg": "./assets/projectImg/Web/25_logo.svg",
         "projectImg": "./assets/projectImg/Web/Web_2025.png",
         "projectTitle": "DID Gradwebsite 2025",
-        "projectDescription": "<a href='https://cde.nus.edu.sg/did/gradshows/2025' target='_blank' class='underline'>here</a>",
+        "projectDescription": "Graduation website for the Industrial Design students Class of 2024. Check out their works and the website <a href='https://cde.nus.edu.sg/did/gradshows/2025' target='_blank' class='underline'>here</a>",
     },
     {
         "titleID": "rowxrow",
@@ -159,7 +165,7 @@ const WEB_DATA = [
         "thumbnailImg": "./assets/projectImg/Web/2-10.jpg",
         "projectImg": "./assets/projectImg/Web/Performer-UI.png",
         "projectTitle": "DID Gradwebsite 2025",
-        "projectDescription": "",
+        "projectDescription": "Digital visualisation of the processes involved in knitting with a knitting machine. Audience inputs are translated into digital interface containing instructions which are then used to knit by manipulating the knitting machine according to their inputs. Exhibited in Ars Electronica 2024 under the project row x row. In collaboration with Sheryl Teng and Goh Yu Yan.",
     }
 ]
 

@@ -15,8 +15,8 @@ export default function ProjectCard({ selectedData }) {
             onMouseEnter={() => setFlipped(true)}
             onMouseLeave={() => setFlipped(false)}>
                 <div className="card-front">
-                    <div className="image-container w-full h-full">
-                        <Image src={selectedData.thumbnailImg} alt={selectedData.title} width={320} height={320} />
+                    <div className="image-container w-full h-full items-center justify-center">
+                        <Image src={selectedData.thumbnailImg} alt={selectedData.title} width={320} height={320} className="object-center object-contain"/>
                     </div>
                 </div>
                 <div

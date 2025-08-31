@@ -4,10 +4,10 @@ import { Navbar } from "./components/navbar";
 import "./index.css";
 import { Footer } from "./components/footer";
 import ProjectCard from "./components/project-card";
-import { FINAL_DATA } from "./data";
+import { FINAL_DATA, WEB_DATA } from "./data";
 
 export default function Home() {
-  const mainBodyStyle = "flex flex-col m-auto items-center justify-start max-w-[2160px] w-full md:w-[80%] my-[52px] md:my-[80px]"
+  const mainBodyStyle = "flex flex-col m-auto items-center justify-start max-w-[2160px] w-full md:w-[80%] my-[52px] md:my-[80px] gap-12"
 
   return (
     <div className="font-secondary bg-primary text-accent flex flex-col min-h-screen items-start justify-start">
@@ -22,6 +22,18 @@ export default function Home() {
             With a curious mind and a passion for design, I aim to blend technology into daily life in ways that feel natural and enriching.
           </h2>
           <hr className="h-[1px] w-[80%] px-[12px] md:px-[48px] w-[80%] md:w-full" />
+        </div>
+        <div id="projects" className="flex flex-col items-center justify-start w-full my-[24px]">
+          <h1 className="text-3xl md:text-4xl font-main font-semibold text-accent mb-8">
+            Web Development
+          </h1>
+          <div className="flex flex-row items-center justify-center w-full gap-[24px]">
+            {WEB_DATA.map((data, i) => (
+              <Link href={{ pathname: '/project', query: { msg: data.titleID } }} key={i}>
+                <ProjectCard selectedData={data} />
+              </Link>
+            ))}
+          </div>
         </div>
         <div id="projects" className="flex flex-col items-center justify-start w-full my-[24px]">
           <h1 className="text-3xl md:text-4xl font-main font-semibold text-accent mb-8">

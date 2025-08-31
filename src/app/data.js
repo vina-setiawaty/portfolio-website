@@ -1,5 +1,20 @@
 const FINAL_DATA = [
     {
+        "titleID": "CubicRhythms",
+        "title": "Cubic Rhythms",
+        "type": "Design Project",
+        "tags": ["Interactive", "Product", "Experience"],
+        "hoverText": "What if marble runs goes up instead of down?",
+        "supervisor": "Donn Koh",
+        "teamMembers": ["Basil Wee"],
+        "thumbnailImg": "./assets/projectImg/Playable/square.png",
+        "projectImg": "./assets/projectImg/Playable/Screenshot 2025-08-10 203713.png",
+        "projectTitle": "Cubic Rhythms",
+        "projectDescription": "Using string-actuated cube nets, we devise a competitive puzzle-based marble game where the players would need to use the cube nets to move their marbles up ths lope into the enemy territory.",
+        "video": "https://www.youtube.com/embed/_wGpse_Lziw?si=uxhPgheyx0UKMDNI",
+        "project-section": []
+    },
+    {
         "titleID": "Dusk",
         "title": "Dusk",
         "type": "Design Project",
@@ -106,7 +121,62 @@ const FINAL_DATA = [
                 ]
             }
         ],
+    },
+    {
+        "titleID": "CubicRhythms",
+        "title": "Cubic Rhythms",
+        "type": "Design Project",
+        "tags": ["Interactive", "Product", "Experience"],
+        "hoverText": "What if marble runs goes up instead of down?",
+        "supervisor": "Donn Koh",
+        "teamMembers": ["Basil Wee"],
+        "thumbnailImg": "./assets/projectImg/Playable/square.png",
+        "projectImg": "./assets/projectImg/Playable/Screenshot 2025-08-10 203713.png",
+        "projectTitle": "Cubic Rhythms",
+        "projectDescription": "Using string-actuated cube nets, we devise a competitive puzzle-based marble game where the players would need to use the cube nets to move their marbles up ths lope into the enemy territory.",
+        "video": "https://www.youtube.com/embed/_wGpse_Lziw?si=uxhPgheyx0UKMDNI",
+        "project-section": []
+    }
+    
+]
+
+const WEB_DATA = [
+    {
+        "titleID": "Gradweb2024",
+        "title": "DID Gradwebsite 2024",
+        "year": "2024",
+        "type": "Web Development",
+        "tags": ["HTML/CSS", "JavaScript"],
+        "hoverText": "",
+        "thumbnailImg": "./assets/projectImg/Web/Logo.png",
+        "projectImg": "./assets/projectImg/Web/Web_2024.png",
+        "projectTitle": "DID Gradwebsite 2024",
+        "projectDescription": "<a href='https://cde.nus.edu.sg/did/gradshows/2024/?filter=designer' target='_blank' class='underline'>here</a>",
+    },
+    {
+        "titleID": "Gradweb2025",
+        "title": "DID Gradwebsite 2025",
+        "year": "2025",
+        "type": "Web Development",
+        "tags": ["HTML/CSS", "JavaScript", "Tailwind"],
+        "hoverText": "",
+        "thumbnailImg": "./assets/projectImg/Web/25_logo.svg",
+        "projectImg": "./assets/projectImg/Web/Web_2025.png",
+        "projectTitle": "DID Gradwebsite 2025",
+        "projectDescription": "<a href='https://cde.nus.edu.sg/did/gradshows/2025' target='_blank' class='underline'>here</a>",
+    },
+    {
+        "titleID": "rowxrow",
+        "title": "row x row",
+        "year": "2024",
+        "type": "Web Development",
+        "tags": ["HTML/CSS", "JavaScript", "Airtable"],
+        "hoverText": "",
+        "thumbnailImg": "./assets/projectImg/Web/2-10.jpg",
+        "projectImg": "./assets/projectImg/Web/Performer-UI.png",
+        "projectTitle": "DID Gradwebsite 2025",
+        "projectDescription": "",
     }
 ]
 
-export { FINAL_DATA };
+export { FINAL_DATA, WEB_DATA };

@@ -121,23 +121,7 @@ const FINAL_DATA = [
                 ]
             }
         ],
-    },
-    {
-        "titleID": "CubicRhythms",
-        "title": "Cubic Rhythms",
-        "type": "Design Project",
-        "tags": ["Interactive", "Product", "Experience"],
-        "hoverText": "What if marble runs goes up instead of down?",
-        "supervisor": "Donn Koh",
-        "teamMembers": ["Basil Wee"],
-        "thumbnailImg": "./assets/projectImg/Playable/square.png",
-        "projectImg": "./assets/projectImg/Playable/Screenshot 2025-08-10 203713.png",
-        "projectTitle": "Cubic Rhythms",
-        "projectDescription": "Using string-actuated cube nets, we devise a competitive puzzle-based marble game where the players would need to use the cube nets to move their marbles up ths lope into the enemy territory.",
-        "video": "https://www.youtube.com/embed/_wGpse_Lziw?si=uxhPgheyx0UKMDNI",
-        "project-section": []
     }
-    
 ]
 
 const WEB_DATA = [

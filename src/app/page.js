@@ -27,7 +27,7 @@ export default function Home() {
           <h1 className="text-3xl md:text-4xl font-main font-semibold text-accent mb-8">
             Web Development
           </h1>
-          <div className="flex flex-row items-center justify-center w-full gap-[24px]">
+          <div className="flex flex-row flex-wrap items-center justify-center w-full gap-[24px]">
             {WEB_DATA.map((data, i) => (
               <Link href={{ pathname: '/project', query: { msg: data.titleID } }} key={i}>
                 <ProjectCard selectedData={data} />
@@ -39,7 +39,7 @@ export default function Home() {
           <h1 className="text-3xl md:text-4xl font-main font-semibold text-accent mb-8">
             Design Projects
           </h1>
-          <div className="flex flex-row items-center justify-center w-full gap-[24px]">
+          <div className="flex flex-row flex-wrap items-center justify-center w-full gap-[24px]">
             {FINAL_DATA.map((data, i) => (
               <Link href={{ pathname: '/project', query: { msg: data.titleID } }} key={i}>
                 <ProjectCard selectedData={data} />

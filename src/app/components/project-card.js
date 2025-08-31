@@ -10,8 +10,8 @@ export default function ProjectCard({ selectedData }) {
     const [flipped, setFlipped] = useState(false);
 
     return (
-        <div className="project-card-container bg-primary">
-            <div className="card-inner relative w-[320px] h-[320px]" 
+        <div className="project-card-container bg-primary mx-[12px] w-[90%] sm:mx-[0px] sm:w-[320px] sm:h-[320px]">
+            <div className="card-inner relative " 
             onMouseEnter={() => setFlipped(true)}
             onMouseLeave={() => setFlipped(false)}>
                 <div className="card-front">

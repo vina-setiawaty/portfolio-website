@@ -24,11 +24,11 @@ export const Navbar = () => {
                             Projects
                         </Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link href="/about" className="hover:underline">
                             About
                         </Link>
-                    </li>
+                    </li> */}
                 </ul>
             </div>
         </nav>

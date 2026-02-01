@@ -36,23 +36,23 @@ const FINAL_DATA = [
                 ]
             },
             {
-                "heading": "An interactive planter that brings animated shadows into your living room.",
+                "heading": "The perfect level of difficulty keeps players playing.",
                 "pictures": [
                     {
-                        "img_link": "/assets/projectImg/Planter/20240620_230215_1-ezgif.com-optimize.gif",
-                        "caption": "Dusk in a dark room"
+                        "img_link": "/assets/projectImg/Playable/simplePathways.png",
+                        "caption": "Simple pathways that are too obvious"
                     },
                     {
-                        "img_link": "/assets/projectImg/Planter/LED.JPG",
-                        "caption": "LED inside the planter"
+                        "img_link": "/assets/projectImg/Playable/complexPathways.png",
+                        "caption": "Complex pathways that are too difficult"
                     },
                     {
-                        "img_link": "/assets/projectImg/Planter/ground.png",
-                        "caption": "A cable connected to the ground able to detect change in capacitance"
+                        "img_link": "/assets/projectImg/Playable/6x9.png",
+                        "caption": "Compact yet full layout with multiple pathways"
                     }
                 ],
                 "paragraphs": [
-                    "We strive to bring these majestic shadows indoors. Hidden within our planter, we’ve placed an LED strip controlled by Arduino to create animated shadows. By capitalizing on the water content in plants, we can measure changes in capacitance when the plant is touched. Thus, we created Dusk—a planter that magnifies a plant's shadow and allows it to respond to your touch using its shadow."
+                    "Our early prototypes were simple and proved that the core mechanics worked, but players solved them too quickly and lost interest. When we pushed in the opposite direction and created more complex, intertwining paths, players became confused and frustrated, often giving up. This shows us that the game needed to start simple, offering early moments of success, before gradually introducing more challenging situations.", "We constrained ourselves to a 6 × 9 grid, forcing us to be more creative with the path design and where we put the challenges. The first row introduces the folding mechanism and how it moves the marble, while later challenges require players to recognise dependencies between cubes, such as folding one cube first to form a bridge before passing the marble on top of it. These moments of discovery are spread throughout the maze, with a hidden shortcut included for curious players to find."
                 ]
             }
         ]
@@ -69,8 +69,8 @@ const FINAL_DATA = [
         "projectImg": "/assets/projectImg/Planter/Landscape.png",
         "projectTitle": "Dusk",
         "projectDescription": "A companion planter allowing you to interact with your plant through its shadow.",
-        "projectBackground": "",
-        "projectSummary": [{ "title": "", "description": "" }, { "title": "", "description": "" }, { "title": "", "description": "" }],
+        // "projectBackground": "",
+        // "projectSummary": [{ "title": "", "description": "" }, { "title": "", "description": "" }, { "title": "", "description": "" }],
         "video": "https://www.youtube.com/embed/MVgkQ48kaXY?si=bIrdCKRzEYX60trZ",
         "project-section": [
             {
@@ -127,8 +127,8 @@ const FINAL_DATA = [
         "projectImg": "./assets/projectImg/Ceramics/Landscape.png",
         "projectTitle": "TechTile",
         "projectDescription": "Exploring ceramic tiles as a medium for our daily interactions with technology",
-        "projectBackground": "",
-        "projectSummary": [{ "title": "", "description": "" }, { "title": "", "description": "" }, { "title": "", "description": "" }],
+        // "projectBackground": "",
+        // "projectSummary": [{ "title": "", "description": "" }, { "title": "", "description": "" }, { "title": "", "description": "" }],
         "video": "https://www.youtube.com/embed/zOE3IwYC-kY?si=W9Agstc2P0eZy_2k",
         "videoTitle": "TechTile Demonstration",
         "videoDesc": "We created a digital interface to control the patterns and light effect that is shown on a physical ceramic piece to demonstrate the potential of ceramics as an interactive medium while allowing people to design their own interaction with three different states, standby, hover, and touch.",

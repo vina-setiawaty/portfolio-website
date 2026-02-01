@@ -43,18 +43,20 @@ export const Hero = ({ selectedData }) => {
         <hr></hr>
       </div>
 
+{selectedData.projectBackground && (
       <div>
         <h1 className="text-lg md:text-2xl font-semibold font-main">Background</h1>
         <p className="text-sm md:text-base mt-2">{selectedData.projectBackground}</p>
       </div>
+      )}
 
-
+{selectedData.projectBackground && (
       <div className="flex flex-col w-full my-8 gap-4">
         <div>
 
         <h1 className="text-lg md:text-2xl font-semibold font-main">Key Takeaways</h1>
 </div>
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-4">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 md:auto-rows-auto gap-4">
           {selectedData["projectSummary"]?.map((section, idx) => (
             <div>
               <h2 className="text-sm md:text-base font-semibold font-main">{section.title}</h2>
@@ -63,6 +65,7 @@ export const Hero = ({ selectedData }) => {
           ))}
         </div>
       </div>
+)}
 
       {selectedData["project-section"]?.map((section, idx) => (
         <div

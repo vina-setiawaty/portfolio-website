@@ -10,9 +10,52 @@ const FINAL_DATA = [
         "thumbnailImg": "./assets/projectImg/Playable/square.png",
         "projectImg": "./assets/projectImg/Playable/Screenshot 2025-08-10 203713.png",
         "projectTitle": "Cubic Rhythms",
-        "projectDescription": "Using string-actuated cube nets, we devise a competitive puzzle-based marble game where the players would need to use the cube nets to move their marbles up ths lope into the enemy territory.",
+        "projectDescription": "Using string-actuated cube nets, we devised a competitive puzzle-based marble game where the players would need to use the cube nets to move their marbles up ths slope into the enemy territory.",
+        "projectBackground": "Cubic Rhythms began with an exploration of string-actuated cube nets, flat structures that transform into three-dimensional forms with a single pull. We were interested in this distinctly two-state mechanism, where folding and unfolding could be repurposed beyond its usual educational role to become a way of holding and releasing objects. This reminded us of marble runs, systems where marbles move through a series of interconnected paths and mechanisms, but are often experienced passively as the marble simply travels downward. What if by combining string-actuated cube nets with marble run we can make it into an interactive experience, and even make the marble move upward instead of down? Cubic Rhythms reimagines the marble run as an interactive puzzle, turning folding cube nets into a hands-on interaction to move marbles upward and challenge players to find the way to the top.",
+        "projectSummary": [{ "title": "Prototyping across Systems and Mediums", "description": "We used a mix of low-fidelity and high-fidelity prototypes to test different aspects of the game, as well as a mix of digital and physical prototyping depending on its suitability for different purposes." }, { "title": "The Right Level of Difficulty", "description": "We iterated through multiple versions to find the right balance between easy enough to get started yet challenging enough to be engaging, validated through continuous user testing at every iteration." }, { "title": "Everything is Design", "description": "To design the best playing experience for the game, we also needed to pay attention to other aspects of design, such as interaction and product design." }, {"title": "Play as an Educational Tool", "description": "Cubic Rhythms offers a easy and hands-on gateway for players to interact with cube nets, which is a common educational tool used to demonstrate how flat 2D surfaces can be folded into 3D objects. The puzzle-solving nature of the game also promotes exploration and systems thinking." }],
         "video": "https://www.youtube.com/embed/_wGpse_Lziw?si=uxhPgheyx0UKMDNI",
-        "project-section": []
+        "project-section": [
+            {
+                "heading": "Prototyping involves different fidelities and mediums for each appropriate purpose.",
+                "pictures": [
+                    {
+                        "img_link": "/assets/projectImg/Playable/Cardboard.png",
+                        "caption": "Cardboard cube nets to explore fundamental shape before 3D-printing"
+                    },
+                    {
+                        "img_link": "/assets/projectImg/Playable/DigitalPrototyping.png",
+                        "caption": "Digital prototyping to iterate different path ideas"
+                    },
+                    {
+                        "img_link": "/assets/projectImg/Playable/PhysicalPrototyping.png",
+                        "caption": "Physical prototyping to test mechanism and playability"
+                    }
+                ],
+                "paragraphs": [
+                    "We began with low-fidelity cardboard cube nets for rapid exploration, allowing us to quickly test folding patterns and understand how cube nets behave. When the flat surfaces prevented marbles from rolling reliably, we transitioned to 3D-printed cube nets with built-in slopes, building on insights gained from earlier experiments.", "Alongside physical prototyping, we used digital tools to plan and test maze paths before committing to fabrication. While digital planning supported fast iteration, physical prototypes were necessary to validate material behaviour and mechanics. Moving between digital and physical tools allowed us to iterate efficiently while staying grounded in real-world performance."
+                ]
+            },
+            {
+                "heading": "An interactive planter that brings animated shadows into your living room.",
+                "pictures": [
+                    {
+                        "img_link": "/assets/projectImg/Planter/20240620_230215_1-ezgif.com-optimize.gif",
+                        "caption": "Dusk in a dark room"
+                    },
+                    {
+                        "img_link": "/assets/projectImg/Planter/LED.JPG",
+                        "caption": "LED inside the planter"
+                    },
+                    {
+                        "img_link": "/assets/projectImg/Planter/ground.png",
+                        "caption": "A cable connected to the ground able to detect change in capacitance"
+                    }
+                ],
+                "paragraphs": [
+                    "We strive to bring these majestic shadows indoors. Hidden within our planter, we’ve placed an LED strip controlled by Arduino to create animated shadows. By capitalizing on the water content in plants, we can measure changes in capacitance when the plant is touched. Thus, we created Dusk—a planter that magnifies a plant's shadow and allows it to respond to your touch using its shadow."
+                ]
+            }
+        ]
     },
     {
         "titleID": "Dusk",
@@ -26,6 +69,8 @@ const FINAL_DATA = [
         "projectImg": "/assets/projectImg/Planter/Landscape.png",
         "projectTitle": "Dusk",
         "projectDescription": "A companion planter allowing you to interact with your plant through its shadow.",
+        "projectBackground": "",
+        "projectSummary": [{ "title": "", "description": "" }, { "title": "", "description": "" }, { "title": "", "description": "" }],
         "video": "https://www.youtube.com/embed/MVgkQ48kaXY?si=bIrdCKRzEYX60trZ",
         "project-section": [
             {
@@ -82,6 +127,8 @@ const FINAL_DATA = [
         "projectImg": "./assets/projectImg/Ceramics/Landscape.png",
         "projectTitle": "TechTile",
         "projectDescription": "Exploring ceramic tiles as a medium for our daily interactions with technology",
+        "projectBackground": "",
+        "projectSummary": [{ "title": "", "description": "" }, { "title": "", "description": "" }, { "title": "", "description": "" }],
         "video": "https://www.youtube.com/embed/zOE3IwYC-kY?si=W9Agstc2P0eZy_2k",
         "videoTitle": "TechTile Demonstration",
         "videoDesc": "We created a digital interface to control the patterns and light effect that is shown on a physical ceramic piece to demonstrate the potential of ceramics as an interactive medium while allowing people to design their own interaction with three different states, standby, hover, and touch.",

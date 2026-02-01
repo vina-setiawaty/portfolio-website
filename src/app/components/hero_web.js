@@ -5,6 +5,8 @@ import Tags from "./tags";
 import parse from 'html-react-parser';
 import { Video } from "lucide-react";
 
+// For web dev projects
+
 export const HeroWeb = ({ selectedData }) => {
     return (
         <div className="flex flex-col items-center justify-start w-full my-[48px] gap-4 md:gap-8">

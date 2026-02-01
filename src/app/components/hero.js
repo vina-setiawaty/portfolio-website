@@ -7,7 +7,7 @@ export const Hero = ({ selectedData }) => {
   return (
     <div className="flex flex-col items-center justify-start w-full my-[48px] gap-4 md:gap-8">
       <Image src={selectedData.projectImg} width={16} height={9} alt="landscape_hero" className="w-full aspect-video" />
-      <div id="project-heading" className="flex flex-col gap-4 w-full mb-4 md:mb-8 px-[16px] md:px-[0px]">
+      <div id="project-heading" className="flex flex-col gap-4 w-full mb-4 md:mb-8 px-[12px] md:px-[0px]">
         <div id="title-and-tags" className="flex flex-col md:flex-row-reverse items-start md:items-center justify-between w-full gap-4">
           <Tags tags={selectedData.tags} end="true" />
           <h1 className="text-3xl md:text-6xl font-main font-bold text-accent">
@@ -44,21 +44,21 @@ export const Hero = ({ selectedData }) => {
       </div>
 
 {selectedData.projectBackground && (
-      <div>
+      <div className="px-[12px] md:px-[0px]">
         <h1 className="text-lg md:text-2xl font-semibold font-main">Background</h1>
         <p className="text-sm md:text-base mt-2">{selectedData.projectBackground}</p>
       </div>
       )}
 
 {selectedData.projectBackground && (
-      <div className="flex flex-col w-full my-8 gap-4">
+      <div className="flex flex-col w-full my-8 gap-4 px-[12px] md:px-[0px]">
         <div>
 
         <h1 className="text-lg md:text-2xl font-semibold font-main">Key Takeaways</h1>
 </div>
         <div className="w-full grid grid-cols-1 md:grid-cols-2 md:auto-rows-auto gap-4">
           {selectedData["projectSummary"]?.map((section, idx) => (
-            <div>
+            <div key={idx}>
               <h2 className="text-sm md:text-base font-semibold font-main">{section.title}</h2>
               <p className="text-sm md:text-base mt-2">{section.description}</p>
             </div>
@@ -73,7 +73,7 @@ export const Hero = ({ selectedData }) => {
           className="w-full my-8 grid grid-cols-1 md:grid-cols-2 md:auto-rows-auto gap-4"
         >
           {/* Always first square = text (fills its grid cell) */}
-          <div className="flex flex-col w-full">
+          <div className="flex flex-col w-full px-[12px] md:px-[0px]">
             <h2 className="text-xl md:text-2xl font-bold font-main mb-2">{section.heading}</h2>
             {section.paragraphs.map((para, i) => (
               <p key={i} className="text-sm md:text-base mb-2">{para}</p>
@@ -92,7 +92,7 @@ export const Hero = ({ selectedData }) => {
                       src={pic.img_link}
                       alt={pic.caption}
                       fill
-                      className="object-cover rounded"
+                      className="object-cover md:rounded"
                     />
                   </div>
                   <p className="text-sm md:text-md mt-2 text-center">{pic.caption}</p>
@@ -108,10 +108,10 @@ export const Hero = ({ selectedData }) => {
                     src={pic.img_link}
                     alt={pic.caption}
                     fill
-                    className="object-cover rounded border-none"
+                    className="object-cover md:rounded"
                   />
                 </div>
-                <p className="text-sm md:text-md mt-2 text-center">{pic.caption}</p>
+                <p className="text-sm md:text-md mt-2 text-center px-[12px] md:px-[0px]">{pic.caption}</p>
               </div>
             ))
           )}

@@ -11,7 +11,7 @@ export const HeroWeb = ({ selectedData }) => {
     return (
         <div className="flex flex-col items-center justify-start w-full my-[48px] gap-4 md:gap-8">
             <Image src={selectedData.projectImg} width={16} height={9} alt="landscape_hero" className="w-full" />
-            <div id="project-heading" className="flex flex-col gap-4 w-full mb-4 md:mb-8 px-[16px] md:px=[0px]">
+            <div id="project-heading" className="flex flex-col gap-4 w-full mb-4 md:mb-8 px-[12px] md:px-[0px]">
                 <div id="title-and-tags" className="flex flex-col md:flex-row-reverse items-start justify-between w-full gap-4">
                     <Tags tags={selectedData.tags} end="true" />
                     <h1 className="text-3xl md:text-6xl font-main font-bold text-accent">

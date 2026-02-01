@@ -97,7 +97,7 @@
 }
 
 .project-card-container {
-  width: fit-content;
+  /* width: fit-content; */
   height: fit-content;
   padding: 16px;
   box-shadow: 0px 2px 5px 0px var(--color-accent);

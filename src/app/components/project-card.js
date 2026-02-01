@@ -10,12 +10,12 @@ export default function ProjectCard({ selectedData }) {
     const [flipped, setFlipped] = useState(false);
 
     return (
-        <div className="project-card-container bg-primary mx-[12px] w-[90%] sm:mx-[0px] sm:w-[320px] sm:h-[320px]">
+        <div className="project-card-container bg-primary w-full h-full sm:min-w-[320px] sm:h-[320px]">
             <div className="card-inner relative " 
             onMouseEnter={() => setFlipped(true)}
             onMouseLeave={() => setFlipped(false)}>
                 <div className="card-front">
-                    <div className="image-container sm:w-[320px] sm:h-[320px] items-center justify-center">
+                    <div className="image-container w-full h-full sm:w-[320px] sm:h-[320px] items-center justify-center">
                         <Image src={selectedData.thumbnailImg} alt={selectedData.title} fill className="object-center object-contain"/>
                     </div>
                 </div>

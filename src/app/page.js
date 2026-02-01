@@ -13,7 +13,7 @@ export default function Home() {
     <div className="font-secondary bg-primary text-accent flex flex-col min-h-screen items-start justify-start">
       <Navbar />
       <div className= {mainBodyStyle}>
-        <div className="flex flex-col items-center justify-start w-full my-[48px] gap-4 md:gap-8">
+        <div className="flex flex-col items-center justify-start w-full my-[48px] px-[12px] md:px-0 gap-4 md:gap-8">
           <h1 className="text-jump text-6xl md:text-8xl text-center font-secondary font-bold text-accent mb-4">
             <span>H</span><span>e</span><span>l</span><span>l</span><span>o</span><span>,</span><br />
             <span>I</span><span>&apos;</span><span>m</span><span>{'\u00A0'}</span><span>V</span><span>i</span><span>n</span><span>a</span>
@@ -29,7 +29,7 @@ export default function Home() {
           </h1>
           <div className="flex flex-row flex-wrap items-center justify-center w-full gap-[24px]">
             {WEB_DATA.map((data, i) => (
-              <Link href={{ pathname: '/project', query: { msg: data.titleID, type: "web" } }} key={i}>
+              <Link href={{ pathname: '/project', query: { msg: data.titleID, type: "web" } }} key={i} className="px-[12px] w-full sm:w-auto sm:px-auto">
                 <ProjectCard selectedData={data} />
               </Link>
             ))}
@@ -41,7 +41,7 @@ export default function Home() {
           </h1>
           <div className="flex flex-row flex-wrap items-center justify-center w-full gap-[24px]">
             {FINAL_DATA.map((data, i) => (
-              <Link href={{ pathname: '/project', query: { msg: data.titleID, type: "project" } }} key={i}>
+              <Link href={{ pathname: '/project', query: { msg: data.titleID, type: "project" } }} key={i} className="px-[12px] w-full sm:w-auto sm:px-auto">
                 <ProjectCard selectedData={data} />
               </Link>
             ))}

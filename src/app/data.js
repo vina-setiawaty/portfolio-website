@@ -7,7 +7,7 @@ const FINAL_DATA = [
         "hoverText": "What if marble runs goes up instead of down?",
         "supervisor": "Donn Koh",
         "teamMembers": ["Basil Wee"],
-        "thumbnailImg": "./assets/projectImg/Playable/square.png",
+        "thumbnailImg": "./assets/projectImg/Playable/square.mp4",
         "projectImg": "./assets/projectImg/Playable/Screenshot 2025-08-10 203713.png",
         "projectTitle": "Cubic Rhythms",
         "projectDescription": "Using string-actuated cube nets, we devised a competitive puzzle-based marble game where the players would need to use the cube nets to move their marbles up ths slope into the enemy territory.",
@@ -54,7 +54,94 @@ const FINAL_DATA = [
                 "paragraphs": [
                     "Our early prototypes were simple and proved that the core mechanics worked, but players solved them too quickly and lost interest. When we pushed in the opposite direction and created more complex, intertwining paths, players became confused and frustrated, often giving up. This shows us that the game needed to start simple, offering early moments of success, before gradually introducing more challenging situations.", "We constrained ourselves to a 6 × 9 grid, forcing us to be more creative with the path design and where we put the challenges. The first row introduces the folding mechanism and how it moves the marble, while later challenges require players to recognise dependencies between cubes, such as folding one cube first to form a bridge before passing the marble on top of it. These moments of discovery are spread throughout the maze, with a hidden shortcut included for curious players to find."
                 ]
+            },
+            {
+                "heading": "Experience, interaction and product design combined to create a holistic playing experience.",
+                "pictures": [
+                    {
+                        "img_link": "/assets/projectImg/Playable/simplePathways.png",
+                        "caption": "Simple pathways that are too obvious"
+                    },
+                    {
+                        "img_link": "/assets/projectImg/Playable/complexPathways.png",
+                        "caption": "Complex pathways that are too difficult"
+                    },
+                    {
+                        "img_link": "/assets/projectImg/Playable/6x9.png",
+                        "caption": "Compact yet full layout with multiple pathways"
+                    }
+                ],
+                "paragraphs": [
+                    "Our early prototypes were simple and proved that the core mechanics worked, but players solved them too quickly and lost interest. When we pushed in the opposite direction and created more complex, intertwining paths, players became confused and frustrated, often giving up. This shows us that the game needed to start simple, offering early moments of success, before gradually introducing more challenging situations.", "We constrained ourselves to a 6 × 9 grid, forcing us to be more creative with the path design and where we put the challenges. The first row introduces the folding mechanism and how it moves the marble, while later challenges require players to recognise dependencies between cubes, such as folding one cube first to form a bridge before passing the marble on top of it. These moments of discovery are spread throughout the maze, with a hidden shortcut included for curious players to find."
+                ]
             }
+        ]
+    },
+    {
+        "titleID": "MediView",
+        "title": "MediView",
+        "type": "Design Project",
+        "tags": ["Spatial Computing", "Product", "Experience"],
+        "hoverText": "What if patients can use their waiting time more meaningfully?",
+        "supervisor": "Gabriel Lipkowitz",
+        "teamMembers": ["Chen Zi Xin", "Wong Himari"],
+        "thumbnailImg": "./assets/projectImg/MediView/square.mp4",
+        "projectImg": "./assets/projectImg/MediView/square.mp4",
+        "projectTitle": "MediView",
+        "projectDescription": "MediView aims to provide a self-guided and stress-free immersive experience that informs ACL tear patients on their injury and prehabilitation needs, allowing patients to be informed without being overwhelmed.",
+        "projectBackground": "For patients with an ACL tear, prehabilitation consists of muscle-conditioning exercises performed before surgery to improve the likelihood and speed of returning to high-intensity sports. However, upon diagnosis, patients are often overwhelmed by a flood of information about their injury, prehabilitation, and treatment options, which can obscure the importance of prehabilitation itself. This is a critical issue: based on our conversations with a clinical exercise physiologist, limited awareness and understanding of prehabilitation can lead to low adherence, resulting in reduced strength and knee stability before surgery and potentially compromising post-surgical recovery. We identified an opportunity to offload some of this information and education to the long waiting times that patients experience through a self-guided immersive experience.",
+        "projectSummary": [{ "title": "Onboarding for a seamless experience", "description": "Spatial computing involves new interactions that makes an onboarding experience crucial to ease the users into the experience and ensure its effectiveness." }, { "title": "Identifying suitable context and intervention", "description": "We identified that an immersive experience would work best to engage patients who are waiting in the hospital to educate them further on their injury and next steps." }, { "title": "Maximizing engagement through new interfaces", "description": "Spatial computing offers new immersive experiences such as 3D models as user interface and immersive media as a method to convey information."}],
+        "video": "",
+        "project-section": [
+            {
+                "heading": "A new computing paradigm calls for an onboarding experience.",
+                "pictures": [
+                    {
+                        "img_link": "/assets/projectImg/MediView/tutorial.mp4",
+                        "caption": "Tutorial familiarising users to spatial computing interactions and the app features"
+                    },
+                    {
+                        "img_link": "/assets/projectImg/MediView/check-in.mp4",
+                        "caption": "Checking on patient's concerns which can inform the upcoming appointment"
+                    }
+                ],
+                "paragraphs": [
+                    "Spatial computing introduces new interactions that users may not be familiar with, such gaze-based selection and 3D model manipulation. To ensure users can navigate the experience effectively, we designed an onboarding tutorial that guides them through these interactions. This tutorial is crucial for easing users into the experience and ensuring they can access all the features of the app without frustration.", "The onboarding process also includes a check-in feature where patients can express their concerns and questions about their injury. This information can be relayed to their healthcare providers ahead of their appointment, allowing for a more personalized and efficient consultation."
+                ]
+            },
+            {
+                "heading": "Finding the appropriate context and place for spatial computing experiences.",
+                "pictures": [
+                    {
+                        "img_link": "/assets/projectImg/MediView/ujm.png",
+                        "caption": "Tutorial familiarising users to spatial computing interactions and the app features"
+                    },
+                    {
+                        "img_link": "/assets/projectImg/MediView/check-in.mp4",
+                        "caption": "Checking on patient's concerns which can inform the upcoming appointment"
+                    }
+                ],
+                "paragraphs": [
+                    ""
+                ]
+            },
+            {
+                "heading": "Immersive media and 3D models to maximize engagement and information retention.",
+                "pictures": [
+                    {
+                        "img_link": "/assets/projectImg/MediView/musclemenu.mp4",
+                        "caption": "Tutorial familiarising users to spatial computing interactions and the app features"
+                    },
+                    {
+                        "img_link": "/assets/projectImg/MediView/immersivefeatures.mp4",
+                        "caption": "Checking on patient's concerns which can inform the upcoming appointment"
+                    }
+                ],
+                "paragraphs": [
+                    ""
+                ]
+            }
+            
         ]
     },
     {

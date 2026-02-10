@@ -1,13 +1,19 @@
 // import Image from "next/image";
+'use client';
 import Link from "next/link";
 import { Navbar } from "./components/navbar";
 import "./index.css";
 import { Footer } from "./components/footer";
 import ProjectCard from "./components/project-card";
+import { useEffect } from "react";
 import { FINAL_DATA, WEB_DATA } from "./data";
 
 export default function Home() {
   const mainBodyStyle = "flex flex-col m-auto items-center justify-start max-w-[2160px] w-full md:w-[80%] my-[52px] md:my-[80px] gap-12"
+
+  useEffect(() => {
+      document.title = 'Vina | Portfolio'
+    }, []);
 
   return (
     <div className="font-secondary bg-primary text-accent flex flex-col min-h-screen items-start justify-start">
@@ -23,18 +29,7 @@ export default function Home() {
           </h2>
           <hr className="h-[1px] w-[80%] px-[12px] md:px-[48px] w-[80%] md:w-full" />
         </div>
-        <div id="projects" className="flex flex-col items-center justify-start w-full my-[24px]">
-          <h1 className="text-3xl md:text-4xl font-main font-semibold text-accent mb-8">
-            Web Development
-          </h1>
-          <div className="flex flex-row flex-wrap items-center justify-center w-full gap-[24px]">
-            {WEB_DATA.map((data, i) => (
-              <Link href={{ pathname: '/project', query: { msg: data.titleID, type: "web" } }} key={i} className="px-[12px] w-full sm:w-auto sm:px-auto">
-                <ProjectCard selectedData={data} />
-              </Link>
-            ))}
-          </div>
-        </div>
+        
         <div id="projects" className="flex flex-col items-center justify-start w-full my-[24px]">
           <h1 className="text-3xl md:text-4xl font-main font-semibold text-accent mb-8">
             Design Projects
@@ -42,6 +37,19 @@ export default function Home() {
           <div className="flex flex-row flex-wrap items-center justify-center w-full gap-[24px]">
             {FINAL_DATA.map((data, i) => (
               <Link href={{ pathname: '/project', query: { msg: data.titleID, type: "project" } }} key={i} className="px-[12px] w-full sm:w-auto sm:px-auto">
+                <ProjectCard selectedData={data} />
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        <div id="projects" className="flex flex-col items-center justify-start w-full my-[24px]">
+          <h1 className="text-3xl md:text-4xl font-main font-semibold text-accent mb-8">
+            Web Development
+          </h1>
+          <div className="flex flex-row flex-wrap items-center justify-center w-full gap-[24px]">
+            {WEB_DATA.map((data, i) => (
+              <Link href={{ pathname: '/project', query: { msg: data.titleID, type: "web" } }} key={i} className="px-[12px] w-full sm:w-auto sm:px-auto">
                 <ProjectCard selectedData={data} />
               </Link>
             ))}

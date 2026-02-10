@@ -6,7 +6,20 @@ import Tags from "./tags";
 export const Hero = ({ selectedData }) => {
   return (
     <div className="flex flex-col items-center justify-start w-full my-[48px] gap-4 md:gap-8">
-      <Image src={selectedData.projectImg} width={16} height={9} alt="landscape_hero" className="w-full aspect-video" />
+      {selectedData.projectImg.endsWith('.mp4') || selectedData.projectImg.endsWith('.mov') ? (
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-center object-cover"
+          width={16} height={9}
+        >
+          <source src={selectedData.projectImg} type="video/mp4" />
+        </video>
+      ) : (
+        <Image src={selectedData.projectImg} width={16} height={9} alt="landscape_hero" className="w-full aspect-video" />
+      )}
       <div id="project-heading" className="flex flex-col gap-4 w-full mb-4 md:mb-8 px-[12px] md:px-[0px]">
         <div id="title-and-tags" className="flex flex-col md:flex-row-reverse items-start md:items-center justify-between w-full gap-4">
           <Tags tags={selectedData.tags} end="true" />
@@ -43,29 +56,29 @@ export const Hero = ({ selectedData }) => {
         <hr></hr>
       </div>
 
-{selectedData.projectBackground && (
-      <div className="px-[12px] md:px-[0px]">
-        <h1 className="text-lg md:text-2xl font-semibold font-main">Background</h1>
-        <p className="text-sm md:text-base mt-2">{selectedData.projectBackground}</p>
-      </div>
+      {selectedData.projectBackground && (
+        <div className="px-[12px] md:px-[0px]">
+          <h1 className="text-lg md:text-2xl font-semibold font-main mb-4">Background</h1>
+          <p className="text-sm md:text-base mt-2">{selectedData.projectBackground}</p>
+        </div>
       )}
 
-{selectedData.projectBackground && (
-      <div className="flex flex-col w-full my-8 gap-4 px-[12px] md:px-[0px]">
-        <div>
+      {selectedData.projectBackground && (
+        <div className="flex flex-col w-full my-8 px-[12px] md:px-[0px]">
+          <div>
 
-        <h1 className="text-lg md:text-2xl font-semibold font-main">Key Takeaways</h1>
-</div>
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 md:auto-rows-auto gap-4">
-          {selectedData["projectSummary"]?.map((section, idx) => (
-            <div key={idx}>
-              <h2 className="text-sm md:text-base font-semibold font-main">{section.title}</h2>
-              <p className="text-sm md:text-base mt-2">{section.description}</p>
-            </div>
-          ))}
+            <h1 className="text-lg md:text-2xl font-semibold font-main mb-4">Key Takeaways</h1>
+          </div>
+          <div className="w-full grid grid-cols-1 md:grid-flow-col md:grid-cols-2 md:grid-rows-2 gap-4">
+            {selectedData["projectSummary"]?.map((section, idx) => (
+              <div key={idx}>
+                <h2 className="text-sm md:text-base font-semibold font-main">{idx + 1}. {section.title}</h2>
+                <p className="text-sm md:text-base mt-2">{section.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
-)}
+      )}
 
       {selectedData["project-section"]?.map((section, idx) => (
         <div
@@ -88,12 +101,31 @@ export const Hero = ({ selectedData }) => {
               {section.pictures.map((pic, i) => (
                 <div key={i} className="flex flex-col items-center w-full">
                   <div className="relative w-full aspect-video">
-                    <Image
+                    {pic.img_link.endsWith('.mp4') || pic.img_link.endsWith('.mov') ? (
+                      <video
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        className="w-full h-full object-center object-cover"
+                        width={16} height={9}
+                      >
+                        <source src={pic.img_link} type="video/mp4" />
+                      </video>
+                    ) : (
+                      <Image
+                        src={pic.img_link}
+                        alt={pic.caption}
+                        fill
+                        className="object-cover md:rounded"
+                      />
+                    )}
+                    {/* <Image
                       src={pic.img_link}
                       alt={pic.caption}
                       fill
                       className="object-cover md:rounded"
-                    />
+                    /> */}
                   </div>
                   <p className="text-sm md:text-md mt-2 text-center">{pic.caption}</p>
                 </div>
@@ -104,12 +136,31 @@ export const Hero = ({ selectedData }) => {
             section.pictures.slice(0, 3).map((pic, i) => (
               <div key={i} className="flex flex-col items-center justify-end w-full">
                 <div className="relative w-full aspect-video ">
-                  <Image
-                    src={pic.img_link}
-                    alt={pic.caption}
-                    fill
-                    className="object-cover md:rounded"
-                  />
+                  {pic.img_link.endsWith('.mp4') || pic.img_link.endsWith('.mov') ? (
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-full h-full object-center object-cover"
+                      width={16} height={9}
+                    >
+                      <source src={pic.img_link} type="video/mp4" />
+                    </video>
+                  ) : (
+                    <Image
+                      src={pic.img_link}
+                      alt={pic.caption}
+                      fill
+                      className="object-cover md:rounded"
+                    />
+                  )}
+                  {/* <Image
+                      src={pic.img_link}
+                      alt={pic.caption}
+                      fill
+                      className="object-cover md:rounded"
+                    /> */}
                 </div>
                 <p className="text-sm md:text-md mt-2 text-center px-[12px] md:px-[0px]">{pic.caption}</p>
               </div>
@@ -117,19 +168,20 @@ export const Hero = ({ selectedData }) => {
           )}
         </div>
       ))}
+      {selectedData.video && (
+        < div className="relative w-full pb-[56.25%] h-0">
+          <iframe
+            className="absolute top-0 left-0 w-full h-full"
+            src={selectedData.video}
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+      )
+      }
 
-      {/* Video Section */}
-      <div className="relative w-full pb-[56.25%] h-0">
-        <iframe
-          className="absolute top-0 left-0 w-full h-full"
-          src={selectedData.video}
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-        ></iframe>
-      </div>
-
-    </div>
+    </div >
   )
 }

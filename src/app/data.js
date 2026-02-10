@@ -130,11 +130,11 @@ const FINAL_DATA = [
                 "pictures": [
                     {
                         "img_link": "/assets/projectImg/MediView/musclemenu.mp4",
-                        "caption": "Tutorial familiarising users to spatial computing interactions and the app features"
+                        "caption": "Using 3D model as a navigation menu."
                     },
                     {
                         "img_link": "/assets/projectImg/MediView/immersivefeatures.mp4",
-                        "caption": "Checking on patient's concerns which can inform the upcoming appointment"
+                        "caption": "Animated 3D model and immersive video to engage the audience."
                     }
                 ],
                 "paragraphs": [
